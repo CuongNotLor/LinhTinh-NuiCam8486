@@ -1,0 +1,288 @@
+/* Chính */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+}
+html {
+    font-family: 'Open Sans', sans-serif,'Times New Roman', Times, serif;
+    background-color: #ffffff;
+}
+@keyframes button-color {
+    from {background-color: #bad8b6b6; color: black;}
+    to {background-color:#BC7C7C; color:white;}
+}
+@keyframes tab-color {
+    from {background-color: white; color: black;}
+    to {background-color:aliceblue;}
+}
+@keyframes rotate{
+    from {transform: rotate(0);}
+    to {transform: rotate(90deg);}
+}
+/* Thanh cuộn */
+::-webkit-scrollbar{
+    background-color: #BAD8B6;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a4a4a5;
+    border: #BAD8B6 solid 3px;
+    border-radius: 10px;
+}
+/* Thanh menu */
+#header {
+    display:flex;
+    width: 100%;
+    height:50px;
+    background-color: #bad8b6b6;
+    backdrop-filter: blur(16px);
+    padding: 5px;
+    padding-left: 10px;
+    text-align: center;
+    align-items: center;
+    position:fixed;
+    top:0;
+    font-size: 20px;
+}
+#header a{
+    font-family: 'Source Serif 4', sans-serif;
+    
+}
+#header p{
+    font-family: 'Playwrite VN', sans-serif;
+}
+.start {
+    justify-content: flex-start;
+}
+.end {
+    position: absolute;
+    right: 0;
+}
+#header > p,a{
+    padding:10px;
+    color:black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.menubutton:hover{
+    background-color: #BC7C7C;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    animation-name:button-color;
+    animation-duration:0.5s;
+    
+}
+/* Ảnh chính */
+#banner {
+    display:flex;
+    width: 100%;
+    height: 400px;
+    background: url("media/mountain.png") no-repeat center center;
+    background-size: cover;
+}
+#banner > p {
+    width:100%;
+    color:white;
+    font-size: 50px;
+    margin-top: 250px;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 850;
+    font-family:"Playwrite VN", Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0,0,0,0));
+
+}
+#banner p::selection, span::selection{
+    background-color: rgba(79, 223, 248, 0.61);
+    color: white;
+}
+/* Nội dung */
+
+#content {
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#first {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-indent:40px;
+}
+#content h2{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.info{
+    display: flex;
+}
+#content h2{
+    font-size:40px;
+    font-family:'Yeseva','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333333;
+}
+.text{
+    width: 60%;
+    font-size: 22px;
+    line-height: 30px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:justify;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+.picture {
+    font-weight:600;
+    font-size:25px;
+    width: 40%;
+    display: flex;
+    flex-wrap:wrap;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+.picture img{
+    width: 100%;
+}
+#content .more{
+    width: 200px;
+    font-family: 'Source Serif 4',sans-serif;
+    display: flex;
+    border: #92b48d solid 2px;
+    color: rgb(37, 37, 37);
+    border-radius: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+#content .more:hover{
+    color: white;
+}
+.more span{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+#video {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#video > video { width: 50%;}
+#video a:hover{
+    text-decoration: underline;
+    color: purple;
+}
+/* Kết */
+#footer {
+    background-color: #18191b;
+    height:200px;
+    padding: 30px;
+    align-items: center;
+    color: white;
+    display: flex;
+}
+
+.f_block {
+    width: 40%;
+    margin-left: 5%;
+    text-align: center;
+}
+.f_block a{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.f_block a:hover{
+    color: #BC7C7C;
+    text-decoration: underline;
+}
+/* Nút về đầu trang */
+#totop {
+    padding:10px;
+    border: 2px solid #92b48d;
+    background-color: #bad8b6b6;
+    backdrop-filter: blur(16px);
+    border-radius: 15px;
+    position:fixed;
+    right: 5px;
+    bottom: 5px;
+    align-items: center;
+}
+#totop:hover { background-color: #92b48d;}
+
+/* Bảng - cho ẩm thực và địa điểm */
+table {
+    margin-top: 20px;
+    width: 100%;
+    border: grey solid 4px;
+    border-spacing: 0px;
+    font-size: 20px;
+}
+tr, th, td{
+    border: gray solid 2px;
+}
+tr:hover{
+    background-color: aliceblue;
+    animation: tab-color 0.5s;
+}
+th  {
+    font-weight: 800
+}
+table .colone{
+    width: 15%;
+    font-weight: 800;
+}
+table .coltwo{
+    width: 60%;
+}
+table .colthr > img{
+    width:30%;
+}
+.info li{
+    margin-left: 25px;
+}
+/* Cảnh báo trên điện thoại */
+#warning {
+    width: 80%;
+    background-color: #242629;
+    height:  480px;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    border-radius: 20px;
+    display: none;
+}
+#warning > img{
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    animation: rotate 1.5s;
+    animation-iteration-count: infinite;
+}
+#warning > p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 15px 0 15px;
+}
+button {
+    height: 60px;
+    width: 80%;
+    margin: 10px 10% 0 10%;
+    border: none;
+    border-radius: 30px;
+    background-color: #bad8b6b6;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+button:hover {
+    animation: button-color 0.5s;
+    background-color: #BC7C7C;
+}
+.refuse {
+    display: none !important;
+}
+

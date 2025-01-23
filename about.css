@@ -1,0 +1,29 @@
+#banner {
+    display:flex;
+    width: 100%;
+    height: 400px;
+    background: url("media/mountain-1.png") no-repeat center center;
+    background-size: cover;
+}
+#content h2 {
+    text-align:center;
+}
+.members {
+    display: flex;
+    margin-top: 30px;
+}
+.member {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+}
+.member:hover {
+    background-color: aliceblue;
+    animation: tab-color 0.5s;
+}
+.member a:hover{
+    color: #BC7C7C;
+}
