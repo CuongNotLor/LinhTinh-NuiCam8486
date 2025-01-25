@@ -18,8 +18,9 @@ html {
     to {background-color:aliceblue;}
 }
 @keyframes rotate{
-    from {transform: rotate(0);}
-    to {transform: rotate(90deg);}
+    0% {transform: rotate(0);}
+    70% {transform: rotate(90deg);}
+    100% {transform: rotate(90deg)}
 }
 @keyframes popup{
     0% {
@@ -282,7 +283,7 @@ table .colthr > img{
     display: block;
     margin-left: 25%;
     margin-right: 25%;
-    animation: rotate 1.5s;
+    animation: rotate 2s;
     animation-iteration-count: infinite;
 }
 #warning p{
