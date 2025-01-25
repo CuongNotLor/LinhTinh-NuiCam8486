@@ -26,10 +26,10 @@ html {
         bottom: -1000px;
     }
     90% {
-        bottom: -10px;
+        bottom: 4%;
     }
     100% {
-        bottom: -20px;
+        bottom: 2.5%;
     }
 }
 /* Thanh cuộn */
@@ -265,16 +265,20 @@ table .colthr > img{
     
 }
 .window{
-    width: 100%;
-    bottom: -20px;
+    width: 95%;
+    /* max-width: 400px; */
+    margin-left: 2.5%;
+    bottom: 2.5%;
     background-color: #242629;
-    height:  480px;
+    /* height:  480px; */
     position: fixed;
     border-radius: 20px;
     animation: popup 1s;
 }
 #warning img{
     width: 50%;
+    height: auto;
+    /* max-height: 300px; */
     display: block;
     margin-left: 25%;
     margin-right: 25%;
@@ -290,7 +294,7 @@ table .colthr > img{
 #warning button {
     height: 60px;
     width: 80%;
-    margin: 10px 10% 0 10%;
+    margin: 10px 10% 10% 10%;
     border: none;
     border-radius: 30px;
     background-color: #bad8b6b6;
